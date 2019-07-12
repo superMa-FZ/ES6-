@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			/*数组新增函数
+			 * map  映射函数，有几个输入就有几个输出
+			 * reduce 汇总，多个输入一个输出
+			 * 
+			 */
+			let arr = [5, 56, 99, 100, 54, 67, 17, 26, 33];
+			let resute = arr.map(item => item >= 60 ? '及格' : '不及格');
+			alert(arr);
+			alert(resute);
+            //reduce函数
+			resute = arr.reduce(function(tmp, item, index) {
+				return tmp + item;
+			})
+			alert(resute);
+			//过滤器函数 过滤出3的倍数
+			resute = arr.filter(function(item){
+				return item%3==0;
+			})
+			alert(resute);
+			//foreach遍历函数
+			arr.forEach(function(item){
+				alert(item+1);
+			})
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

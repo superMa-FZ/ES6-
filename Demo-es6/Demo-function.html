@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//剩余参数,必须放在参数列表的最后
+			//...可以用于收集参数
+			/* 	function show(a,b,...args){
+					alert(args);
+				}
+				show(12,4,58,69,21); */
+			//展开数组
+			let show = (a, b, c) => {
+				alert(a);
+				alert(b);
+				alert(c);
+			};
+			let arr = [1, 2, 3];
+			show(...arr);
+			//默认参数
+		    let oo=(a,b=12,c=45)=>{
+				console.log(a,b,c);
+				}
+			oo(15);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

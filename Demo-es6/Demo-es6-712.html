@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				var aBtn=document.getElementsByTagName("input");
+				
+				//es6可支持块级作用域,原生js不支持
+				
+				
+				for(let i=0;i<aBtn.length;i++){
+					//(function(i){
+					aBtn[i].onclick=function(){
+						alert(i);
+					};
+				//	})(i);
+				}
+				}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="按钮1" />
+		<input type="button" value="按钮2" />
+		<input type="button" value="按钮3" />
+	</body>
+</html>
